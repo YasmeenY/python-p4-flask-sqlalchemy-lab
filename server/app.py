@@ -48,12 +48,12 @@ def zookeeper_by_id(id):
                     """
     animals = [animal for animal in zookeeper.animals]
 
-    if not animals:
-        response_body += f'<ul>Has no Animals at this time.</ul>'
+    # if not animals:
+    #     response_body += f'<ul>Has no Animals at this time.</ul>'
 
-    else:
-        for animal in animals:
-            response_body += f'<ul>Animal: {animal.name}</ul>'
+    # else:
+    for animal in animals:
+        response_body += f'<ul>Animal: {animal.name}</ul>'
 
     response = make_response(response_body, 200)
 
@@ -73,12 +73,12 @@ def enclosure_by_id(id):
                     """
     animals = [animal for animal in enclosure.animals]
 
-    if not animals:
-        response_body += f'<ul>Has no Animals at this time.</ul>'
+    # if not animals:
+    #     response_body += f'<ul>Has no Animals at this time.</ul>'
 
-    else:
-        for animal in animals:
-            response_body += f'<ul>Animal: {animal.name}</ul>'
+    # else:
+    for animal in animals:
+        response_body += f'<ul>Animal: {animal.name}</ul>'
 
     response = make_response(response_body, 200)
 
