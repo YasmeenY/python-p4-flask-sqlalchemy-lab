@@ -12,7 +12,7 @@ class Zookeeper(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-    birthday = db.Column(db.DateTime)
+    birthday = db.Column(db.Date)
     animals = db.relationship("Animal", backref="zookeeper")
 
 class Enclosure(db.Model):
